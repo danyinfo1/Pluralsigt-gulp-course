@@ -1,10 +1,18 @@
 module.exports = function() {
+    
+    var client = './src/client/';
+    
     var config = {
-        //all my js
+        temp: './.temp/',
+        
+        /**
+        * File paths
+        */
         alljs: [
             './src/**/*.js',
             './*.js'
-        ]
+        ],
+        less: [client + 'styles/styles.less']
     };
     
     return config;
